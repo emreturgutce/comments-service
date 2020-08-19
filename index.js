@@ -3,6 +3,7 @@ const { randomBytes } = require('crypto');
 
 const app = express();
 app.use(express.json());
+app.use(require('cors')());
 
 const commentsByPostId = {};
 
